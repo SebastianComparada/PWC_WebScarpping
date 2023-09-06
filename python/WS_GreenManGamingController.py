@@ -46,6 +46,5 @@ def gameExistsGMG(list):
 def priceGMG(list):
     time.sleep(3)
     game_price = (he.find_all(he.S("//html/body/div[1]/div[4]/div[3]/div/div/div/section/div/div/div/div[2]/div[1]/div[1]/div[1]/div[2]/div/ol/li[1]/div/div/div/div/div/div/div[1]/div[2]/div/span")))[0].web_element.text
-    print (game_price)
     return (list.append("Green Man Gaming: " + game_price))
 
