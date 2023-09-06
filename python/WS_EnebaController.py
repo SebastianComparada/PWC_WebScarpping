@@ -46,6 +46,5 @@ def gameExistsEneba(list):
 def priceEneba(list):
     time.sleep(3)
     game_price = (he.find_all(he.S("//html/body/div[1]/main/div/div/section/div[2]/div[2]/div[1]/div/div[3]/a/div[1]/span[2]")))[0].web_element.text
-    print (game_price)
     return (list.append("Eneba: " + game_price))
 
