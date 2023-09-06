@@ -47,5 +47,4 @@ def gameExistsSteam(list):
 def priceSteam(list):
     time.sleep(3)
     game_price = (he.find_all(he.S("//html/body/div[1]/div[7]/div[6]/form/div[1]/div/div[1]/div[3]/div/div[3]/a[1]/div[2]/div[4]/div/div/div/div")))[0].web_element.text
-    print (game_price)
     return (list.append("Steam: " + game_price))
